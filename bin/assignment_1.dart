@@ -2,7 +2,7 @@
 
 void main() {
   StudentManagementSystem n=StudentManagementSystem();
-  n.main();
+  n.start();
 }
 
 abstract class Role{
@@ -84,7 +84,7 @@ class Teacher extends Person{
 }
 
 class StudentManagementSystem{
-  void main() {
+  void start() {
     var student = Student('John Doe', 20, '123 Main St', StudentRole());
     student.courseScores = [90, 85, 82];
 
